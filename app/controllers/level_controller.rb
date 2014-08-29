@@ -42,4 +42,10 @@ class LevelController < ApplicationController
     end
   end
 
+  def destroy
+    @level = Level.find(params[:id])
+    @level.delete
+    redirect_to("/levels")
+  end
+
 end
