@@ -1,0 +1,12 @@
+<% content_for(:title, "Add a Level | Kite Academy") %>
+
+<%= render('layouts/errors', :object => @level) %>
+
+<h1>Add a Level</h1>
+
+<form action="/levels" method="post">
+  <%= render('levels/form') %>
+  <button>Add level</button>
+</form>
+
+<p><a href="levels">Home</a></p>

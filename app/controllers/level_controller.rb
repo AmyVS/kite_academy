@@ -5,4 +5,9 @@ class LevelController < ApplicationController
     render('levels/index.html.erb')
   end
 
+  def new
+    @level = Level.new
+    render('levels/new.html.erb')
+  end
+
 end

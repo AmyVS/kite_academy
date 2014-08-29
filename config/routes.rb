@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   match('lessons/:id/destroy', {via: :delete, to: 'lesson#destroy'})
 
   match('levels', {via: :get, to: 'level#index'})
+  match('levels/new', {via: :get, to: 'level#new'})
 end
