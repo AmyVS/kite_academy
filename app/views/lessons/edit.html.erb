@@ -4,10 +4,12 @@
 
 <h2>Edit "<%= @lesson.name %>" Lesson</h2>
 
-<form action="/lessons/<%= @lesson.id %>" method="post">
+<form role="form" action="/lessons/<%= @lesson.id %>" method="post">
   <input name="_method" type="hidden" value="patch">
-  <%= render('lessons/form') %>
-  <button>Edit Lesson</button>
+    <div class="form-group">
+      <%= render('lessons/form') %>
+    </div>
+  <button class="btn btn-primary">Edit Lesson</button>
 </form>
 
 <%= render('layouts/home') %>

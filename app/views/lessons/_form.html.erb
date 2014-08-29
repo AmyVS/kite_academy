@@ -1,14 +1,22 @@
-<label for="lesson_number">Number:</label>
-<input id="lesson_number" name="lesson[number]" type="text" placeholder="1" value="<%= @lesson.number %>">
-<label for="lesson_name">Name:</label>
-<input id="lesson_name" name="lesson[name]" type="text" placeholder="Kite Handling" value="<%= @lesson.name %>">
-<label for="lesson_content">Content:</label>
-<textarea id="lesson_content" name="lesson[content]" type="text" rows="10" cols="20" placeholder="Start by holding the bar with two hands with the kite at 12 o'clock..."><%= @lesson.content %></textarea>
-<%if Lesson.all.any? %>
-<label for="lesson_level">Level:</label>
-  <select name="lesson[level_id]" id="level">
-    <% Level.all.each do |level| %>
-      <option value="<%= level.id %>"><%= level.name %></option>
-    <% end %>
-  </select>
-<% end %>
+<div class="form-group">
+  <label for="lesson_number">Number:</label>
+  <input class="form-control" id="lesson_number" name="lesson[number]" type="text" placeholder="1" value="<%= @lesson.number %>">
+</div>
+<div>
+  <label for="lesson_name">Name:</label>
+  <input class="form-control" id="lesson_name" name="lesson[name]" type="text" placeholder="Kite Handling" value="<%= @lesson.name %>">
+</div>
+<div class="form-group">
+  <label for="lesson_content">Content:</label>
+  <textarea class="form-control" id="lesson_content" name="lesson[content]" type="text" rows="10" cols="20" placeholder="Start by holding the bar with two hands with the kite at 12 o'clock..."><%= @lesson.content %></textarea>
+</div>
+<div class="form-group">
+  <%if Lesson.all.any? %>
+  <label for="lesson_level">Level:</label>
+    <select name="lesson[level_id]" id="level">
+      <% Level.all.each do |level| %>
+        <option value="<%= level.id %>"><%= level.name %></option>
+      <% end %>
+    </select>
+  <% end %>
+</div>
