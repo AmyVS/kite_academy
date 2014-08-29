@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   match('levels', {via: :get, to: 'level#index'})
   match('levels/new', {via: :get, to: 'level#new'})
   match('levels', {via: :post, to: 'level#create'})
-  match('levels/:id' {via: :get, to: 'level#edit'})
+  match('levels/:id', {via: :get, to: 'level#show'})
+
 end

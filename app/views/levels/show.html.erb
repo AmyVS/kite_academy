@@ -1,0 +1,8 @@
+<% content_for(:title, "#{@level.name} | Kite Academy") %>
+
+<h1><%= @level.name %></h1>
+
+<p><a href="/levels/<%= @level.id %>/edit">Edit Level</a></p>
+<p><a href="/levels/<%= @level.id %>/destroy" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete Level</a></p>
+
+<p><a href="/levels">Home</a></p>
