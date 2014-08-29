@@ -2,7 +2,7 @@
 
 <%= render('layouts/errors', :object => @lesson) %>
 
-<h1>Edit "<%= @lesson.name %>" Lesson</h1>
+<h2>Edit "<%= @lesson.name %>" Lesson</h2>
 
 <form action="/lessons/<%= @lesson.id %>" method="post">
   <input name="_method" type="hidden" value="patch">

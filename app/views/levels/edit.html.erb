@@ -2,7 +2,7 @@
 
 <%= render('layouts/errors', :object => @level) %>
 
-<h1>Edit "<%= @level.name %>" Level Name</h1>
+<h2>Edit "<%= @level.name %>" Level Name</h2>
 
 <form action="/levels/<%= @level.id %>" method="post">
   <input name="_method" type="hidden" value="patch">

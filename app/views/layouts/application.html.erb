@@ -6,12 +6,19 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="container-fluid">
+  <div class="jumbotron">
+    <a href="/"><h1>Kite Academy</h1></a>
+  </div>
 
-<%= flash[:notice] %>
-<%= flash[:alert] %>
+  <div class="container">
 
-<%= yield %>
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+
+    <%= yield %>
+
+  </div>
 
 </body>
 </html>
