@@ -2,4 +2,9 @@
 
 <h1>Add a Lesson</h1>
 
-<form action=""></form>
+<form action="/lessons" method="post">
+  <%= render('lessons/form') %>
+  <button>Add Lesson</button>
+</form>
+
+<p><a href="lessons">Home</a></p>

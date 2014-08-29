@@ -10,4 +10,13 @@ class LessonController < ApplicationController
    render('lessons/new.html.erb')
   end
 
+  def create
+    @lesson = Lesson.create(params[:lesson])
+    if @lesson.valid?
+      redirect_to("/lessons/#{@lesson.id}")
+    else
+      render('contacts/new.html.erb')
+    end
+  end
+
 end
