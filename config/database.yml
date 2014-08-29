@@ -1,0 +1,8 @@
+
+development:
+  adapter: postgresql
+  database: kite_academy_development
+
+test:
+  adapter: postgresql
+  database: kite_academy_test
