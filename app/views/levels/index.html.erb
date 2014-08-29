@@ -1,0 +1,11 @@
+<% content_for(:title, "Levels | Kite Academy") %>
+
+<h1>Levels</h1>
+
+<ul>
+  <% @levels.each do |level| %>
+    <li><a href="levels/<%= level.id %>"><%= level.name %></a></li>
+  <% end %>
+</ul>
+
+<p><a href="levels/new">Add Level</a></p>
