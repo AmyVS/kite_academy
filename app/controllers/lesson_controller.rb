@@ -13,8 +13,10 @@ class LessonController < ApplicationController
   def create
     @lesson = Lesson.create(params[:lesson])
     if @lesson.valid?
+      flash[:notice] = "Your lesson was added successfully!"
       redirect_to("/lessons/#{@lesson.id}")
     else
+      flash[:alert] = "Bummer... looks like there are some things that need fixing here."
       render('lessons/new.html.erb')
     end
   end
@@ -32,8 +34,10 @@ class LessonController < ApplicationController
   def update
     @lesson = Lesson.find(params[:id])
     if @lesson.update(params[:lesson])
+      flash[:notice] = "Your lesson was edited successfully!"
       redirect_to("/lessons/#{@lesson.id}")
     else
+      flash[:alert] = "Bummer... looks like there are some things that need fixing here."
       render('lessons/edit.html.erb')
     end
   end
