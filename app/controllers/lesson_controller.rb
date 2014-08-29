@@ -15,7 +15,7 @@ class LessonController < ApplicationController
     if @lesson.valid?
       redirect_to("/lessons/#{@lesson.id}")
     else
-      render('contacts/new.html.erb')
+      render('lessons/new.html.erb')
     end
   end
 

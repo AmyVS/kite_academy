@@ -1,5 +1,7 @@
 <% content_for(:title, "Add a Lesson | Kite Academy") %>
 
+<%= render('layouts/errors', :object => @lesson) %>
+
 <h1>Add a Lesson</h1>
 
 <form action="/lessons" method="post">
