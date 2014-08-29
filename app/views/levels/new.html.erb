@@ -4,9 +4,11 @@
 
 <h2>Add a Level</h2>
 
-<form action="/levels" method="post">
-  <%= render('levels/form') %>
-  <button>Add level</button>
+<form role="form" action="/levels" method="post">
+  <div class="form-group">
+    <%= render('levels/form') %>
+  </div>
+  <button class="btn btn-primary">Add level</button>
 </form>
 
-<p><a href="levels">Home</a></p>
+<%= render('layouts/home') %>
