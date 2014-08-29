@@ -26,4 +26,9 @@ class LevelController < ApplicationController
     render('levels/show.html.erb')
   end
 
+  def edit
+    @level = Level.find(params[:id])
+    render('levels/edit.html.erb')
+  end
+
 end
