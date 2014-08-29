@@ -6,4 +6,8 @@ class Lesson < ActiveRecord::Base
 
   belongs_to :level
 
+  def next
+    Lesson.all.find_by(number: number.to_i+1)
+  end
+
 end
