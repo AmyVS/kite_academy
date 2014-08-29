@@ -10,4 +10,8 @@ class Lesson < ActiveRecord::Base
     Lesson.all.find_by(number: number.to_i+1)
   end
 
+  def previous
+    Lesson.all.find_by(number: number.to_i-1)
+  end
+
 end
