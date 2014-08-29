@@ -5,4 +5,6 @@
 <p><%= @lesson.content %></p>
 
 <p><a href="/lessons/<%= @lesson.id %>/edit">Edit Lesson</a></p>
-<p><a href="lessons">Home</a></p>
+<p><a href="/lessons/<%= @lesson.id %>/destroy" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete Lesson</a></p>
+
+<p><a href="/lessons">Home</a></p>

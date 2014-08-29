@@ -38,4 +38,10 @@ class LessonController < ApplicationController
     end
   end
 
+  def destroy
+    @lesson = Lesson.find(params[:id])
+    @lesson.delete
+    redirect_to("/lessons")
+  end
+
 end
