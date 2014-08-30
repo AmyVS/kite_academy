@@ -60,6 +60,10 @@ input {
   margin: 20px;
 }
 
+label {
+  font-size: 1.5em;
+}
+
 textarea {
   margin: 20px;
 }
