@@ -10,6 +10,8 @@
   <% end %>
 </ul>
 
+<%= render('layouts/home') %>
+
 <p>
   <a href="/levels/<%= @level.id %>/edit">
     <button class="btn btn-default btn-lg">Edit Level</button>
@@ -18,5 +20,3 @@
     <button class="btn btn-danger btn-lg">Delete Level</button>
   </a>
 </p>
-
-<%= render('layouts/home') %>
