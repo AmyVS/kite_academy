@@ -72,6 +72,10 @@ select {
   margin: 20px 0 0 20px;
 }
 
+p#lesson_content {
+  font-size: 1.25em;
+}
+
 
 
 
