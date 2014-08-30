@@ -6,22 +6,20 @@
 
 
 <% if @lesson.previous %>
-<p>
-  <% @previous_lesson = @lesson.previous %>
-  <a href="<%= @previous_lesson.id %>">
-    <button class="btn btn-warning btn-lg">Previous Lesson</button>
-  </a>
-</p>
+  <p>
+    <% @previous_lesson = @lesson.previous %>
+      <a href="<%= @previous_lesson.id %>">
+        <button class="btn btn-warning btn-lg">Previous Lesson</button>
+      </a>
   <% end %>
 
-<% if @lesson.next %>
-<p>
-  <% @next_lesson = @lesson.next %>
-  <a href="<%= @next_lesson.id %>">
-    <button class="btn btn-warning btn-lg">Next Lesson</button>
-  </a>
-</p>
-  <% end %>
+  <% if @lesson.next %>
+    <% @next_lesson = @lesson.next %>
+      <a href="<%= @next_lesson.id %>">
+        <button class="btn btn-warning btn-lg">Next Lesson</button>
+      </a>
+  </p>
+<% end %>
 
 <p>
   <a href="/lessons/<%= @lesson.id %>/edit">
