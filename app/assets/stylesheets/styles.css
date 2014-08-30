@@ -12,6 +12,12 @@ h1 {
   text-align: center;
 }
 
+h2.moto {
+  color: #F2ECE1;
+  margin: 0;
+  font-style: italic;
+}
+
 body {
   background: #8831f9; /* Old browsers */
   background: -moz-linear-gradient(top,  #8831f9 0%, #2b69e5 53%, #7db9e8 100%); /* FF3.6+ */
@@ -24,17 +30,18 @@ body {
   height: 100%;
   margin-bottom: 30%;
   margin-top: 0;
-  color: #F7E6C8;
+  color: #EDD8B4;
   font-family: 'Shadows Into Light', cursive;
 }
 
 a {
   color: #F7E6C8;
+  font-size: 1.5em;
 }
 
 a:hover {
   text-decoration: none;
-  color: #8C8373;
+  color: #BFA677;
 }
 
 h2 {

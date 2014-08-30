@@ -1,9 +1,6 @@
 <% content_for(:title, "Kite Academy") %>
 
-<h2>Welcome to Kite Academy</h2>
-<h3>Where you, too, can be a kiteboarder!</h3>
-
-<h4>Our skill levels and lessons are as follows:</h4>
+<h2>Our skill levels and lessons are as follows:</h2>
 
 <ul>
   <% @levels.each do |level| %>
@@ -11,7 +8,7 @@
       <a href="levels/<%= level.id %>"><%= level.name %></a><br>
         <ul>
           <% level.lessons.each do |lesson| %>
-          <li>
+          <li id="lesson_names">
             <a href="lessons/<%= lesson.id %>"><%= lesson.name %></a>
           </li>
           <% end %>
