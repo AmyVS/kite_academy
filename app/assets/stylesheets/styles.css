@@ -1,6 +1,9 @@
 h1 {
-  font-size: 4em;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 8em;
+  font-weight: bold;
   margin: 30px;
+  color: #EDD8B4;
 }
 
 .header {
@@ -22,6 +25,7 @@ body {
   margin-bottom: 30%;
   margin-top: 0;
   color: #F7E6C8;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 a {
@@ -56,5 +60,7 @@ textarea {
 select {
   margin: 20px 0 0 20px;
 }
+
+
 
 
