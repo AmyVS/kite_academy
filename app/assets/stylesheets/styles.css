@@ -1,10 +1,12 @@
 h1 {
-  font-family: Times;
+  font-size: 4em;
   margin: 30px;
 }
 
-.jumbotron {
-  background-color: lightblue;
+.header {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
 }
 
 body {
@@ -17,13 +19,18 @@ body {
   background: linear-gradient(to bottom,  #8831f9 0%,#2b69e5 53%,#7db9e8 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8831f9', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
   height: 100%;
-  margin-bottom: 100px;
-  margin-top: 30px;
-  color: #E0E3BC;
+  margin-bottom: 30%;
+  margin-top: 0;
+  color: #F7E6C8;
 }
 
 a {
-  color: #E0E3BC;
+  color: #F7E6C8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #8C8373;
 }
 
 h2 {
