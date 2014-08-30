@@ -1,9 +1,14 @@
 h1 {
-  font-family: arial;
+  font-family: Times;
+  margin: 30px;
 }
 
 .jumbotron {
   background-color: lightblue;
+}
+
+body {
+  background-color: lightgray;
 }
 
 h2 {
@@ -29,3 +34,5 @@ textarea {
 select {
   margin: 20px 0 0 20px;
 }
+
+
