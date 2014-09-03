@@ -1,4 +1,4 @@
-class LevelController < ApplicationController
+class LevelsController < ApplicationController
 
   def index
     @levels = Level.all
