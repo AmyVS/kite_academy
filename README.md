@@ -7,7 +7,7 @@ http://kite-academy.herokuapp.com/
 
 Happy kiting, all!
 
-![image](https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/1962608_10152270513888287_475734688_n.jpg)
+![image](https://scontent-a-sea.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1013322_10101303900938976_623574052_n.jpg?oh=56a803f7a48d42cc63c2c8e5f1aeb1d7&oe=5515B40E)
 
 ---
 **MIT License Copyright (c) 2014 Amy Vaillancourt-Sals**
